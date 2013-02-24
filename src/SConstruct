@@ -7,15 +7,13 @@ arch = sys.platform
 # user-configurable section
 
 has_openexr = True
-exr_includes = [ '/usr/local/include', '/opt/local/include', '/opt/local/include/OpenEXR',
-                 '/usr/local/include/OpenEXR', '/usr/include/OpenEXR' ]
-exr_libdir = [ '/opt/local/lib' ]
+exr_includes = [ '/opt/boxen/homebrew/include', '/opt/boxen/homebrew/include/OpenEXR/' ]
+exr_libdir = [ '/opt/boxen/homebrew/lib' ]
 
 has_dtrace = (arch == 'darwin')
 Export('has_dtrace')
 
-#has_gcd = float(platform.mac_ver()[0][:4] >= 10.6)
-has_gcd = False
+has_gcd = float(platform.mac_ver()[0][:4] >= 10.6)
 
 build_64bit = True
 

@@ -5,14 +5,14 @@
 # common locations for the OpenEXR libraries; may need to be updated
 # for unusual installation locations
 HAVE_EXR=1
-EXR_INCLUDES=-I/usr/local/include/OpenEXR -I/usr/include/OpenEXR -I/opt/local/include/OpenEXR 
-EXR_LIBDIR=-L/usr/local/lib -L/opt/local/lib
+EXR_INCLUDES=-I/opt/boxen/homebrew/include/OpenEXR -I/opt/boxen/homebrew/include
+EXR_LIBDIR=-L/opt/boxen/homebrew/lib
 
-HAVE_LIBTIFF=0
-TIFF_INCLUDES=-I/usr/local/include -I/opt/local/include
-TIFF_LIBDIR=-L/usr/local/lib -L/opt/local/lib
+HAVE_LIBTIFF=1
+TIFF_INCLUDES=-I/opt/boxen/homebrew/include
+TIFF_LIBDIR=-L/opt/boxen/homebrew/lib
 
-HAVE_DTRACE=0
+HAVE_DTRACE=1
 
 # remove -DPBRT_HAS_OPENEXR to build without OpenEXR support
 DEFS=-DPBRT_HAS_OPENEXR

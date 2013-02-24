@@ -5,6 +5,7 @@
 # Build folders:
 src/objs
 src/bin
+src/build
 
 # Common renderer output file:
 pbrt.exr
@@ -14,3 +15,7 @@ pbrt.exr
 #src/core/pbrtparse.cpp
 #src/core/pbrtparse.hh
 src/core/pbrtparse.output
+
+# xcode temp files
+src/pbrt.xcodeproj/project.xcworkspace/
+src/pbrt.xcodeproj/xcuserdata/
